@@ -1,0 +1,12 @@
+<h1>On this page you have the opportunity to add a brand new restaurant to the Railentless collection</h1>
+<h3>Wield your new found power with care...</h3>
+
+<%= form_with model: @restaurant do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+  <%= f.label :rating %>
+  <%= f.number_field :rating %>
+  <%= f.submit %>
+<% end %>
